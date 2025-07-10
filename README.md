@@ -8,6 +8,24 @@ This is a migrated version of the TinySD application, now structured as an Nx mo
 - **UI** (`apps/ui`): Angular frontend application
 - **Database**: MongoDB with collections for logs, images, and settings
 
+### Application Architecture
+
+![Application Architecture](./docs/images/app-architecture.png)
+
+_High-level view of the TinySD application showing the interaction between UI, API, and external services_
+
+### Kubernetes Deployment Architecture
+
+![Kubernetes Architecture](./docs/images/k8s-architecture.png)
+
+_Kubernetes deployment structure showing pods, services, and storage components_
+
+### UI Components Structure
+
+![UI Components](./docs/images/ui-components.png)
+
+_Angular UI component structure and navigation flow_
+
 ## Migration Changes
 
 The old separate `tinysd-api` and `tinysd-ui` applications have been migrated to this monorepo structure:

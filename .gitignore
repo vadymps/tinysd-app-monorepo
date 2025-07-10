@@ -4,6 +4,7 @@
 dist
 tmp
 out-tsc
+saved-images
 
 # dependencies
 node_modules
