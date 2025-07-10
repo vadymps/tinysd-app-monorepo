@@ -20,11 +20,11 @@ _High-level view of the TinySD application showing the interaction between UI, A
 
 _Kubernetes deployment structure showing pods, services, and storage components_
 
-### UI Components Structure
+### App View Gallery
 
 ![UI Components](./docs/images/ui-components.png)
 
-_Angular UI component structure and navigation flow_
+_TinySD application gallery view showing saved AI-generated images_
 
 ## Migration Changes
 
