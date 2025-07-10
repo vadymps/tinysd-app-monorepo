@@ -26,15 +26,6 @@ _Kubernetes deployment structure showing pods, services, and storage components_
 
 _TinySD application gallery view showing saved AI-generated images_
 
-## Migration Changes
-
-The old separate `tinysd-api` and `tinysd-ui` applications have been migrated to this monorepo structure:
-
-- All API modules (database, logs, image) have been preserved
-- All UI components and services have been preserved
-- Docker configurations adapted for monorepo build process
-- Kubernetes configurations updated for new image structure
-
 ## Development
 
 ### Prerequisites
