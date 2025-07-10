@@ -10,21 +10,21 @@ This is a migrated version of the TinySD application, now structured as an Nx mo
 
 ### Application Architecture
 
-![Application Architecture](./docs/images/app-architecture.png)
-
 _High-level view of the TinySD application showing the interaction between UI, API, and external services_
+
+![Application Architecture](./docs/images/app-architecture.png)
 
 ### Kubernetes Deployment Architecture
 
-![Kubernetes Architecture](./docs/images/k8s-architecture.png)
-
 _Kubernetes deployment structure showing pods, services, and storage components_
+
+![Kubernetes Architecture](./docs/images/k8s-architecture.png)
 
 ### App View Gallery
 
-![UI Components](./docs/images/ui-components.png)
-
 _TinySD application gallery view showing saved AI-generated images_
+
+![UI Components](./docs/images/ui-components.png)
 
 ## Development
 
