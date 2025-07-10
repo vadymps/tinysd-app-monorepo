@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { RouterOutlet } from '@angular/router';
+import {
+  MatSidenavContainer,
+  MatSidenav,
+  MatSidenavContent,
+} from '@angular/material/sidenav';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
   selector: 'app-root',
+  imports: [MatSidenavContainer, MatSidenav, MatSidenavContent, RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrl: './app.scss',
+  animations: [
+    trigger('fadeAnimation', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [animate('300ms', style({ opacity: 0 }))]),
+    ]),
+  ],
 })
 export class App {
-  protected title = 'ui';
+  protected title = 'tinysd-ui';
 }

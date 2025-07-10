@@ -1,2 +1,6 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="nb-content-container" fxLayout="column" fxFlexFill>
+  <mat-sidenav mode="over" position="start"> </mat-sidenav>
+  <mat-sidenav-content class="nb-topic-card-content" [@fadeAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
